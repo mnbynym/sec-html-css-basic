@@ -1,0 +1,51 @@
+/* ==========================================================
+   デザイントークン（カスタムプロパティ）
+   ========================================================== */
+:root {
+  /* 文字色 */
+  --text-primary: #1b1b1b;
+  --text-link: #0069c2;
+
+  /* 背景色 */
+  --background-primary: #ffffff;
+
+  /* フォント */
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", "Hiragino Sans",
+    "Noto Sans JP", Meiryo, sans-serif;
+}
+
+/* ==========================================================
+   リセットと基本設定
+   ========================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--background-primary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
