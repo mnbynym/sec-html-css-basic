@@ -22,7 +22,6 @@
   --button-secondary-hover: #e0e0dc;
 
   /* フォント */
-  --font-brand: "Zilla Slab", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", "Hiragino Sans",
     "Noto Sans JP", Meiryo, sans-serif;
 
@@ -32,15 +31,12 @@
 }
 
 /* ==========================================================
-   リセットと基本設定
+   基本設定（リセットは destyle.css が担当）
    ========================================================== */
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
   font-family: var(--font-body);
+  /* 本家 MDN と同じ Inter の判別用字形（l に足が付くなど）を有効化 */
+  font-feature-settings: "ss02";
   font-size: 1rem;
   line-height: 1.5;
   color: var(--text-primary);
@@ -54,17 +50,10 @@ img {
 
 a {
   color: var(--text-link);
-  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 /* 中央寄せの共通コンテナ */
@@ -161,7 +150,7 @@ ul, ol {
 .page-title {
   margin: 3rem 0;
   font-size: 2.5rem;
-  font-weight: normal;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -194,6 +183,7 @@ ul, ol {
 .post-title {
   margin: 0 0 0.7rem;
   font-size: 1.25rem;
+  font-weight: 700; /* destyle.css で消えた見出しの太さを付け直す */
   line-height: 1.3;
 }
 
@@ -274,7 +264,6 @@ ul, ol {
 
 .footer-logo {
   margin: 0;
-  font-family: var(--font-brand);
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -312,35 +301,4 @@ ul, ol {
   border-top: 1px solid var(--border-secondary);
   font-size: 0.8rem;
   color: var(--text-inactive);
-}
-
-/* ==========================================================
-   レスポンシブ対応
-   ========================================================== */
-
-/* タブレット以上：一覧を2列、フッターを2列 */
-@media (min-width: 768px) {
-  .page-title {
-    font-size: 3rem;
-    margin: 4rem 0;
-  }
-
-  .post-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-inner {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* デスクトップ以上：一覧を3列、フッターを4列 */
-@media (min-width: 1024px) {
-  .post-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .footer-inner {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-  }
 }

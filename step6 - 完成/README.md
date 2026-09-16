@@ -1,15 +1,15 @@
-# Step 5 — レスポンシブ対応
+# Step 6 — レスポンシブ対応
 
 ## このステップのゴール
 
-メディアクエリを追加して、画面幅に応じてカラム数が変わるようにする。
+[メディアクエリ](https://developer.mozilla.org/ja/docs/Web/CSS/Guides/Media_queries/Using)を追加して、画面幅に応じてカラム数が変わるようにする。
 これでチュートリアルは完成（「完成」フォルダと同じ内容になる）。
 
 ## やること
 
 CSS の末尾に「レスポンシブ対応」セクションを追加する。
 
-1. **タブレット以上（`min-width: 768px`）**:
+1. **タブレット以上（[`@media`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/At-rules/@media) の `min-width: 768px`）**:
    - `.page-title` を少し大きくする
    - `.post-list` を 2 列にする
    - `.footer-inner` を 2 列にする
@@ -17,14 +17,14 @@ CSS の末尾に「レスポンシブ対応」セクションを追加する。
    - `.post-list` を 3 列にする
    - `.footer-inner` を `2fr 1fr 1fr 1fr` の 4 列にする
 
-## 学ぶポイント
+## ポイント
 
 - **モバイルファースト**: ベース（メディアクエリの外）をモバイル用の 1 カラムで書き、
   `min-width` のメディアクエリで広い画面向けの上書きを重ねていく
 - **ブレイクポイント**: 768px / 1024px という代表的な境界の考え方
-- **Grid とレスポンシブの相性**: `grid-template-columns` を 1 行書き換えるだけで
+- **Grid とレスポンシブの相性**: [`grid-template-columns`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/grid-template-columns) を 1 行書き換えるだけで
   カラム数が変わる（HTML には一切手を入れない）
-- **`fr` 単位**: `2fr 1fr 1fr 1fr` のような比率指定
+- **[`fr` 単位](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Values/flex_value)**: `2fr 1fr 1fr 1fr` のような比率指定
 
 ## 表示の確認
 

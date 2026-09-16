@@ -15,15 +15,12 @@
 }
 
 /* ==========================================================
-   リセットと基本設定
+   基本設定（リセットは destyle.css が担当）
    ========================================================== */
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
   font-family: var(--font-body);
+  /* 本家 MDN と同じ Inter の判別用字形（l に足が付くなど）を有効化 */
+  font-feature-settings: "ss02";
   font-size: 1rem;
   line-height: 1.5;
   color: var(--text-primary);
@@ -37,15 +34,8 @@ img {
 
 a {
   color: var(--text-link);
-  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }

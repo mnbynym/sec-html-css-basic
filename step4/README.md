@@ -1,36 +1,36 @@
-# Step 4 — レイアウトの CSS（レスポンシブなし）
+# Step 4 — 応用の CSS（装飾・レイアウトなし）
 
 ## このステップのゴール
 
-Flexbox と Grid で要素を配置し、ページ全体のレイアウトを完成させる。
-まずはモバイル想定の 1 カラムがベース（複数カラム化は Step 5）。
+CSS で各パーツ（ヘッダー、カード、ボタン、フッター）を完成の見た目に仕上げる。
+配置はまだ縦一列のままで、色・枠線・角丸・ホバーなどの「装飾」に集中する。
 
 ## やること
 
-1. **共通コンテナ**: `.container` を追加する（`max-width: 1200px` + `margin: 0 auto` で中央寄せ）
-2. **ヘッダー**: `.header-inner` を `display: flex` にしてロゴとナビを横並びにする
-   - `.logo` にも `display: flex`（SVG の下にできる余分なすき間をなくす）
-   - `.nav-list` を `display: flex` にしてメニューを横並びにする
-3. **パンくず**: `.breadcrumb` を `display: flex` + `gap` にする
-4. **記事カード**:
-   - `.post` を `flex-direction: column` の縦積み flex にする
-   - `.post-image` を `width: 100%` + `aspect-ratio: 2 / 1` + `object-fit: cover` で統一サイズにする
-   - `.post-body` を flex（縦）+ `flex-grow: 1` にする
-   - `.post-meta` を flex にしてアバター・著者・日付を横一列に揃える
-   - `.read-more` の `display: inline-block` を削除し、
-     `align-self: flex-end` + `margin-top: auto` に置き換える（常にカードの右下に配置）
-5. **記事一覧**: `.post-list` を `display: grid`（1 列 + `gap`）にする
-6. **フッター**: `.footer-inner` と `.footer-list` を grid にし、`.copyright` を中央寄せにする
+1. **デザイントークンの追加**: `:root` に残りの変数を追加する
+   （2 番目の文字色・背景色、罫線、ボタン色、角丸）
+2. **ヘッダー**:
+   - `.site-header` に下罫線
+   - `.nav-list a` を [`display`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/display)`: block` + [`padding`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/padding) で「ボックス状のリンク」にする
+   - [`:hover`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Selectors/:hover) / [`:active`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Selectors/:active) で背景色を変え、`.is-current` で現在地を示す
+3. **サブ・ヘッダー**: 薄いグレーの帯と、パンくずリンクの色
+4. **ページ見出し**: `.page-title` のサイズ・太さ・中央揃え
+5. **記事カード**:
+   - `.post` に枠線（[`border`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/border)）・角丸・[`overflow`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/overflow)`: hidden`（角丸から画像がはみ出さないように）
+   - タイトル・著者情報・要約の文字サイズ・太さ・色（リセットで消えた見出しの太字も付け直す）
+   - `.avatar` を [`border-radius`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/border-radius)`: 50%` で円形にする
+   - `.read-more` をボタンの見た目にする（背景色・角丸・[`transition`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/transition)）
+     ※ここでは仮に `display: inline-block` にしておく（Step 5 で flex に置き換える）
+6. **フッター**: 背景色・罫線・各パーツの文字スタイル
 
-## 学ぶポイント
+## ポイント
 
-- **コンテナパターン**: `max-width` + `margin: 0 auto` によるコンテンツ幅の管理
-- **Flexbox**: 横並び（ヘッダー・著者情報）と縦積み（カード内部）の使い分け
-- **`margin-top: auto`**: flex 内で要素を末尾（カード下端）に押しやるテクニック
-- **`aspect-ratio` + `object-fit: cover`**: 画像を切り抜いてサイズを統一する
-- **Grid**: `grid-template-columns` と `gap` による一覧の整列
+- **[擬似クラス](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Selectors/Pseudo-classes)**: `:hover` / `:active` でインタラクションを作る
+- **リンクをボタンに見せる定番テクニック**: `padding` + 背景色 + `border-radius`
+- **`transition`**: 背景色の変化をなめらかにする
+- **`overflow: hidden`**: 角丸の内側に子要素を収める
 
 ## 表示の確認
 
-ヘッダーが横並びになり、コンテンツが中央寄せ、カードが整った 1 カラムで並べば OK。
-どのカードでも Read more ボタンが右下に揃っていることを確認する。
+縦一列のままだが、ナビのホバー、カードの枠、黒い Read more ボタン、
+円形アバター、グレーのフッターなど、各パーツが完成の見た目になっていれば OK。

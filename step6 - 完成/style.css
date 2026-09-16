@@ -72,8 +72,26 @@ a:hover {
   background-color: var(--background-primary);
 }
 
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.logo {
+  display: flex; /* SVG 下の余分なすき間をなくす */
+}
+
 .logo:hover {
   text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* メニュー項目：ホバーでボックス状の背景色がつく */
@@ -112,6 +130,12 @@ a:hover {
   padding-bottom: 0.2rem;
 }
 
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .breadcrumb a {
   color: var(--text-secondary);
 }
@@ -134,13 +158,25 @@ a:hover {
    記事カード
    ========================================================== */
 .post {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--border-secondary);
   border-radius: var(--card-radius);
   overflow: hidden;
   background-color: var(--background-primary);
 }
 
+.post-image {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  background-color: var(--background-secondary);
+}
+
 .post-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 1.2rem;
 }
 
@@ -152,6 +188,10 @@ a:hover {
 }
 
 .post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
   margin: 0 0 0.7rem;
   font-size: 0.8rem;
   color: var(--text-secondary);
@@ -181,7 +221,8 @@ a:hover {
 
 /* Read more：リンクをボタンの見た目にする */
 .read-more {
-  display: inline-block;
+  align-self: flex-end;
+  margin-top: auto; /* カード下端に揃える */
   padding: 0.5rem 1rem;
   border-radius: var(--elem-radius);
   background-color: var(--button-primary-default);
@@ -197,12 +238,28 @@ a:hover {
 }
 
 /* ==========================================================
+   記事一覧（グリッド）
+   ========================================================== */
+.post-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* ==========================================================
    フッター
    ========================================================== */
 .site-footer {
   border-top: 1px solid var(--border-secondary);
   background-color: var(--background-secondary);
   padding: 2.5rem 0 1.5rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 .footer-logo {
@@ -224,6 +281,8 @@ a:hover {
 }
 
 .footer-list {
+  display: grid;
+  gap: 0.5rem;
   font-size: 0.8rem;
 }
 
@@ -236,9 +295,41 @@ a:hover {
 }
 
 .copyright {
-  margin: 2rem 0 0;
+  max-width: 1200px;
+  margin: 2rem auto 0;
   padding: 1.5rem 1rem 0;
   border-top: 1px solid var(--border-secondary);
   font-size: 0.8rem;
   color: var(--text-inactive);
+}
+
+/* ==========================================================
+   レスポンシブ対応
+   ========================================================== */
+
+/* タブレット以上：一覧を2列、フッターを2列 */
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 3rem;
+    margin: 4rem 0;
+  }
+
+  .post-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* デスクトップ以上：一覧を3列、フッターを4列 */
+@media (min-width: 1024px) {
+  .post-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-inner {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
 }
