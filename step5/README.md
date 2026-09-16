@@ -27,6 +27,7 @@ Flexbox と Grid で要素を配置し、ページ全体のレイアウトを完
 - **`margin-top: auto`**: flex 内で要素を末尾（カード下端）に押しやるテクニック
 - **`aspect-ratio` + `object-fit: cover`**: 画像を切り抜いてサイズを統一する
 - **[Grid](https://developer.mozilla.org/ja/docs/Web/CSS/Guides/Grid_layout/Basic_concepts)**: [`grid-template-columns`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/grid-template-columns) と `gap` による一覧の整列
+- **差分の目印**: `style.css` 内の「★ Step 5」コメントが、このステップで追加・変更した箇所
 
 ## 表示の確認
 

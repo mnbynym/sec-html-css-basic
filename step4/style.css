@@ -4,18 +4,18 @@
 :root {
   /* 文字色 */
   --text-primary: #1b1b1b;
-  --text-secondary: #4e4e4e;
-  --text-inactive: #9c9c9c;
+  --text-secondary: #4e4e4e; /* ★ Step 4 で追加 */
+  --text-inactive: #9c9c9c; /* ★ Step 4 で追加 */
   --text-link: #0069c2;
 
   /* 背景色 */
   --background-primary: #ffffff;
-  --background-secondary: #f7f7f8;
+  --background-secondary: #f7f7f8; /* ★ Step 4 で追加 */
 
-  /* 罫線 */
+  /* 罫線（★ Step 4 で追加） */
   --border-secondary: #bcbcbc;
 
-  /* ボタン */
+  /* ボタン（★ Step 4 で追加） */
   --button-primary-default: #1b1b1b;
   --button-primary-hover: #4e4e4e;
   --button-secondary-default: #ecf4fe;
@@ -25,7 +25,7 @@
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", "Hiragino Sans",
     "Noto Sans JP", Meiryo, sans-serif;
 
-  /* 角丸 */
+  /* 角丸（★ Step 4 で追加） */
   --elem-radius: 0.25rem; /* ボタン・ナビ用（4px） */
   --card-radius: 0.5rem; /* カード用（8px） */
 }
@@ -65,7 +65,7 @@ a:hover {
 }
 
 /* ==========================================================
-   ヘッダー
+   ヘッダー（★ Step 4 で追加）
    ========================================================== */
 .site-header {
   border-bottom: 1px solid var(--border-secondary);
@@ -102,6 +102,7 @@ a:hover {
 /* ==========================================================
    サブ・ヘッダー（薄いグレーの帯）
    ========================================================== */
+/* ★ Step 4 で追加 */
 .sub-header {
   background-color: var(--background-secondary);
   border-bottom: 1px solid var(--border-secondary);
@@ -112,6 +113,7 @@ a:hover {
   padding-bottom: 0.2rem;
 }
 
+/* ★ Step 4 で追加（:hover 含む） */
 .breadcrumb a {
   color: var(--text-secondary);
 }
@@ -121,7 +123,7 @@ a:hover {
 }
 
 /* ==========================================================
-   ページ見出し
+   ページ見出し（★ Step 4 で追加）
    ========================================================== */
 .page-title {
   margin: 3rem 0;
@@ -133,6 +135,7 @@ a:hover {
 /* ==========================================================
    記事カード
    ========================================================== */
+/* ★ Step 4 で追加 */
 .post {
   border: 1px solid var(--border-secondary);
   border-radius: var(--card-radius);
@@ -144,6 +147,7 @@ a:hover {
   padding: 1.2rem;
 }
 
+/* ★ Step 4 で追加：ここから .read-more:hover までの記事カード内スタイルすべて */
 .post-title {
   margin: 0 0 0.7rem;
   font-size: 1.25rem;
@@ -197,7 +201,7 @@ a:hover {
 }
 
 /* ==========================================================
-   フッター
+   フッター（★ Step 4 で追加）
    ========================================================== */
 .site-footer {
   border-top: 1px solid var(--border-secondary);

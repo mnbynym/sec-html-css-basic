@@ -72,6 +72,7 @@ a:hover {
   background-color: var(--background-primary);
 }
 
+/* ★ Step 5 で追加：ロゴとナビを横並びに */
 .header-inner {
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +82,7 @@ a:hover {
   padding-bottom: 0.8rem;
 }
 
+/* ★ Step 5 で追加 */
 .logo {
   display: flex; /* SVG 下の余分なすき間をなくす */
 }
@@ -89,6 +91,7 @@ a:hover {
   text-decoration: none;
 }
 
+/* ★ Step 5 で追加：メニューを横並びに */
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +133,7 @@ a:hover {
   padding-bottom: 0.2rem;
 }
 
+/* ★ Step 5 で追加 */
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -158,6 +162,7 @@ a:hover {
    記事カード
    ========================================================== */
 .post {
+  /* ★ Step 5 で追加（次の 2 行）：カードを縦積みの flex に */
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border-secondary);
@@ -166,6 +171,7 @@ a:hover {
   background-color: var(--background-primary);
 }
 
+/* ★ Step 5 で追加：画像を統一サイズに切り抜く */
 .post-image {
   width: 100%;
   aspect-ratio: 2 / 1;
@@ -174,6 +180,7 @@ a:hover {
 }
 
 .post-body {
+  /* ★ Step 5 で追加（次の 3 行）：本文を flex 化して高さを揃える */
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -188,6 +195,7 @@ a:hover {
 }
 
 .post-meta {
+  /* ★ Step 5 で追加（次の 4 行）：アバター・著者・日付を横一列に */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -221,6 +229,7 @@ a:hover {
 
 /* Read more：リンクをボタンの見た目にする */
 .read-more {
+  /* ★ Step 5 で変更（次の 2 行）：display: inline-block を削除して置き換え */
   align-self: flex-end;
   margin-top: auto; /* カード下端に揃える */
   padding: 0.5rem 1rem;
@@ -238,7 +247,7 @@ a:hover {
 }
 
 /* ==========================================================
-   記事一覧（グリッド）
+   記事一覧（グリッド）（★ Step 5 で追加）
    ========================================================== */
 .post-list {
   display: grid;
@@ -256,6 +265,7 @@ a:hover {
   padding: 2.5rem 0 1.5rem;
 }
 
+/* ★ Step 5 で追加：フッターを grid に */
 .footer-inner {
   display: grid;
   grid-template-columns: 1fr;
@@ -281,6 +291,7 @@ a:hover {
 }
 
 .footer-list {
+  /* ★ Step 5 で追加（次の 2 行）：リンクを等間隔に */
   display: grid;
   gap: 0.5rem;
   font-size: 0.8rem;
@@ -295,6 +306,7 @@ a:hover {
 }
 
 .copyright {
+  /* ★ Step 5 で変更（次の 2 行）：中央寄せに */
   max-width: 1200px;
   margin: 2rem auto 0;
   padding: 1.5rem 1rem 0;

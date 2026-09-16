@@ -86,6 +86,7 @@ HTML のコンテンツをこのステップでそろえ、CSS の土台（リ�
 - **カスタムプロパティ（CSS 変数）**: 色やフォントを 1 か所にまとめて [`var()`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Values/var) で使い回す
 - **Web フォントの読み込み**: [`preconnect`](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Attributes/rel/preconnect) + [`<link rel="stylesheet">`](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/link) の定番パターン
 - **リセット CSS（destyle.css）**: ブラウザのデフォルト･スタイルは既存のリセットファイルにまとめて消してもらい、自分はデザインだけを書く
+- **★ コメント**: `style.css` の「★ Step 2」コメントは追加箇所の目印。以降の各ステップでも、そのステップで追加・変更した箇所にだけ ★ が付いている（前ステップの ★ は消してある）
 
 ## 表示の確認
 

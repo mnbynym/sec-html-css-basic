@@ -25,6 +25,7 @@ CSS の末尾に「レスポンシブ対応」セクションを追加する。
 - **Grid とレスポンシブの相性**: [`grid-template-columns`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/grid-template-columns) を 1 行書き換えるだけで
   カラム数が変わる（HTML には一切手を入れない）
 - **[`fr` 単位](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Values/flex_value)**: `2fr 1fr 1fr 1fr` のような比率指定
+- **差分の目印**: `style.css` 内の「★ Step 6」コメントが、このステップで追加した箇所
 
 ## 表示の確認
 
