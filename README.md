@@ -6,6 +6,8 @@ HTML でコンテンツの骨組みを作り、CSS で装飾・レイアウト�
 
 完成イメージは `step6 - 完成` フォルダの `index.html` をブラウザで開いて確認できる。
 
+[補助資料（Notionページへのリンク）](https://happy-plutonium-e54.notion.site/HTML5-CSS-3a52223da4bd80c0b13cc9fb46a3d119)
+
 ## 前提
 
 - HTML / CSS の事前知識は不要（エディタと最新ブラウザがあればよい）
