@@ -20,7 +20,7 @@
    - タイトル・著者情報・要約の文字サイズ・太さ・色（リセットで消えた見出しの太字も付け直す）
    - `.avatar` を [`border-radius`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/border-radius)`: 50%` で円形にする
    - `.read-more` をボタンの見た目にする（背景色 / 角丸 / [`transition`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/transition)）
-     ※ここでは仮に `display: inline-block` にしておく（Step 5 で flex に置き換える）
+      - ここでは仮に `display: inline-block` にしておく（Step 5 で flex に置き換える）
 6. **フッター**: 背景色・罫線・各パーツの文字スタイル
 
 ## ポイント
