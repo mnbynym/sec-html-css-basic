@@ -15,7 +15,7 @@
    - `.post` を [`flex-direction`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/flex-direction)`: column` の縦積み flex にする
    - `.post-image` を [`width`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/width)`: 100%` + [`aspect-ratio`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/aspect-ratio)`: 2 / 1` + [`object-fit`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/object-fit)`: cover` で統一サイズにする
    - `.post-body` を flex（縦）+ [`flex-grow`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/flex-grow)`: 1` にする
-   - `.post-meta` を flex にしてアバター・著者・日付を横一列に揃える
+   - `.post-meta` を flex にしてアバター / 著者 / 日付を横一列に揃える
    - `.read-more` の `display: inline-block` を削除し、
      [`align-self`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/align-self)`: flex-end` + [`margin-top`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/margin-top)`: auto` に置き換える（常にカードの右下に配置）
 4. **記事一覧**: `.post-list` を `display: grid`（1 列 + `gap`）にする
@@ -31,5 +31,5 @@
 
 ## 表示の確認
 
-ヘッダーが横並びになり、コンテンツが中央寄せ、カードが整った 1 カラムで並べば OK。
-どのカードでも Read more ボタンが右下に揃っていることを確認する。
+- ヘッダーが横並びになり、コンテンツが中央寄せ、カードが整った 1 カラムで並べば OK
+- どのカードでも Read more ボタンが右下に揃っていることを確認する
