@@ -2,20 +2,24 @@
 
 ## このステップのゴール
 
-HTML のコンテンツをこのステップでそろえ、CSS の土台（リセット CSS の導入・デザイントークン・基本設定）を作る
-（`<div>` によるグループ化は Step 3 で行う）。
-フォントと文字色・リンク色が変わり、リストの点が消える。
+- HTML のコンテンツをこのステップで完成させる
+- CSS の土台を作る
+   - リセット CSS の導入
+   - デザイン･トークン
+   - 基本設定（フォントと文字色 / リンク色 / リストの点を消す）
+
+※ `<div>` によるグループ化は Step 3 で行う
 
 ## やること
 
 ### HTML（コンテンツを完成させる）
 
-1. [`<head>`](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/head) に Inter 公式配信（rsms.me）のウェブフォント、リセット CSS（destyle.css）、`style.css` の 3 つの読み込みを追加する
+1. [`<head>`](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/head) に [Inter 公式配信（rsms.me）](https://rsms.me/inter/) のウェブ･フォント、リセット CSS（[destyle.css](https://nicolas-cusan.github.io/destyle.css/)）、`style.css` の 3 つの読み込みを追加する
 2. ヘッダーのテキストロゴ「MDN」を [SVG](https://developer.mozilla.org/ja/docs/Web/SVG) ロゴ（オリジナルをコピー&ペースト）に差し替える
-3. ヘッダーの下に、パンくずリスト入りのサブ・ヘッダー（`<nav class="sub-header">`）を追加する
+3. ヘッダーの下に、パンくずリスト入りのサブ･ヘッダー（`<nav class="sub-header">`）を追加する
 4. 記事カードを 3 件コピーして追加･編集し、合計 4 件にする
 5. フッターにリンク集の 3 列（MDN / Contribute / Developers）を追加する
-6. 後のステップで CSS から選択できるように、各タグへクラス名を付けておく（下の一覧どおりに付ければ OK）
+6. 後のステップで CSS を適用するためのクラス名（下記参照）をタグに付加
 
 ### クラス名の一覧
 
