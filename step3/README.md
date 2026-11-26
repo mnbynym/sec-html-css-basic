@@ -2,8 +2,8 @@
 
 ## このステップのゴール
 
-CSS からレイアウトを組みやすいように、関連する要素を [`<div>`](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/div) でグループ化する。
-HTML はこのステップで最終形になる（以降のステップでは CSS だけを変更する）。
+- CSS からレイアウトを組みやすいように、関連する要素を [`<div>`](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/div) でグループ化
+- HTML はこのステップで最終形になる（以降のステップでは CSS だけを変更する）
 
 ## やること
 
