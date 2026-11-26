@@ -16,7 +16,7 @@
 3. **サブ・ヘッダー**: 薄いグレーの帯と、パンくずリンクの色
 4. **ページ見出し**: `.page-title` のサイズ / 太さ / 中央揃え
 5. **記事カード**:
-   - `.post` に枠線（[`border`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/border)）・角丸・[`overflow`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/overflow)`: hidden`（角丸から画像がはみ出さないように）
+   - `.post` に枠線（[`border`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/border)）・角丸・[`overflow`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/overflow)`: hidden`（角丸から画像がはみ出さないように）を設定
    - タイトル・著者情報・要約の文字サイズ・太さ・色（リセットで消えた見出しの太字も付け直す）
    - `.avatar` を [`border-radius`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/border-radius)`: 50%` で円形にする
    - `.read-more` をボタンの見た目にする（背景色 / 角丸 / [`transition`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/transition)）
