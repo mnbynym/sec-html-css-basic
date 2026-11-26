@@ -2,8 +2,8 @@
 
 ## このステップのゴール
 
-[メディアクエリ](https://developer.mozilla.org/ja/docs/Web/CSS/Guides/Media_queries/Using)を追加して、画面幅に応じてカラム数が変わるようにする。
-これでチュートリアルは完成（「完成」フォルダと同じ内容になる）。
+- [メディアクエリ](https://developer.mozilla.org/ja/docs/Web/CSS/Guides/Media_queries/Using)を追加して、画面幅に応じてカラム数が変わるようにする
+- これでチュートリアルは完成（「完成」フォルダと同じ内容になる）
 
 ## やること
 
