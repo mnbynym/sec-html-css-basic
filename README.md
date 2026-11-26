@@ -44,7 +44,7 @@
 
 ## この基礎編で扱わないもの
 
-以下は **応用編（`sec-html-css-advanced`）** で扱う：
+以下は **[応用編（`sec-html-css-advanced`）](https://github.com/mnbynym/sec-html-css-advanced)** で扱う：
 
 - モダン CSS（ネスト / `clamp()` / `color-mix()` / `:has()`）
 - 高度なレイアウト（`position: sticky` / サブグリッド / コンテナクエリ）
