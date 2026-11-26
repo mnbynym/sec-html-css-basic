@@ -1,10 +1,11 @@
 # HTML5 と CSS で学ぶモダン・ウェブページの作成 ― 基礎編
 
-MDN Blog 風のページを 6 ステップで完成させる研修教材。
-HTML でコンテンツの骨組みを作り、CSS で装飾・レイアウト・レスポンシブ対応へと
-段階的に仕上げていく。**JavaScript は使わない**。
+- [MDN Blog](https://developer.mozilla.org/en-US/blog/) 風のページを 6 ステップで完成させる研修教材
+- HTML でコンテンツの骨組みを作り、CSS で装飾・レイアウト・レスポンシブ対応へと
+段階的に仕上げていく
+- **JavaScript は使わない**
 
-完成イメージは `step6 - 完成` フォルダの `index.html` をブラウザで開いて確認できる。
+完成イメージは `step6 - 完成` フォルダの `index.html` をブラウザで開いて確認
 
 [補助資料（Notionページへのリンク）](https://happy-plutonium-e54.notion.site/HTML5-CSS-3a52223da4bd80c0b13cc9fb46a3d119)
 
@@ -20,12 +21,12 @@ HTML でコンテンツの骨組みを作り、CSS で装飾・レイアウト�
 
 | ステップ | テーマ | 主なスキル |
 | --- | --- | --- |
-| step1 | HTML の基本コンテンツ | 文書構造・セマンティック要素・リンクと画像 |
-| step2 | コンテンツ完成 + 基本 CSS | 外部リソース読み込み・SVG・CSS 変数・リセット CSS |
-| step3 | div によるグループ化 | `<div>` の使いどころ・コンテナパターン |
-| step4 | 装飾の CSS | セレクタ・擬似クラス・ボックスの装飾 |
-| step5 | レイアウトの CSS | Flexbox・Grid・画像の制御 |
-| step6 - 完成 | レスポンシブ | メディアクエリ・モバイルファースト |
+| step1 | HTML の基本コンテンツ | 文書構造 / セマンティック要素 / リンクと画像 |
+| step2 | コンテンツ完成 + 基本 CSS | 外部リソース読み込み / SVG / CSS 変数 / リセット CSS |
+| step3 | div によるグループ化 | `<div>` の使いどころ / コンテナパターン |
+| step4 | 装飾の CSS | セレクタ / 擬似クラス / ボックスの装飾 |
+| step5 | レイアウトの CSS | Flexbox / Grid / 画像の制御 |
+| step6 - 完成 | レスポンシブ | メディアクエリ / モバイルファースト |
 
 各ステップで学ぶ内容・手順の詳細は、それぞれのフォルダ内の `README.md` を参照。
 
@@ -43,9 +44,9 @@ HTML でコンテンツの骨組みを作り、CSS で装飾・レイアウト�
 
 ## この基礎編で扱わないもの
 
-以下は**応用編（`sec-html-css-advanced`）**で扱う：
+以下は **応用編（`sec-html-css-advanced`）** で扱う：
 
-- モダン CSS（ネスト・`clamp()`・`color-mix()`・`:has()`）
-- 高度なレイアウト（`position: sticky`・サブグリッド・コンテナクエリ）
-- アニメーションとインタラクション（`@keyframes`・View Transitions など）
+- モダン CSS（ネスト / `clamp()` / `color-mix()` / `:has()`）
+- 高度なレイアウト（`position: sticky` / サブグリッド / コンテナクエリ）
+- アニメーションとインタラクション（`@keyframes` / View Transitions など）
 - Web フォーム（`<form>` と CSS だけのバリデーション UX）
